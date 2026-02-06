@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#1e293b" stroke="#a855f7" stroke-width="3"/>
+  
+  <!-- Code Brackets -->
+  <g fill="none" stroke="#a855f7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Left Bracket -->
+    <path d="M 60 70 L 45 100 L 60 130"/>
+    
+    <!-- Right Bracket -->
+    <path d="M 140 70 L 155 100 L 140 130"/>
+  </g>
+  
+  <!-- Slash in the middle -->
+  <line x1="85" y1="130" x2="115" y2="70" stroke="#10b981" stroke-width="6" stroke-linecap="round"/>
+  
+  <!-- Terminal cursor -->
+  <rect x="70" y="150" width="60" height="4" fill="#a855f7" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Decorative dots (like code syntax highlighting) -->
+  <circle cx="100" cy="45" r="4" fill="#f59e0b"/>
+  <circle cx="85" cy="45" r="4" fill="#ef4444"/>
+  <circle cx="115" cy="45" r="4" fill="#10b981"/>
+</svg>
