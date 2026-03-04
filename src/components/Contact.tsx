@@ -9,13 +9,13 @@ type Props = {
 
 export function Contact({ id }: Props) {
   return (
-    <div>
-      <h2 className="text-[24px] md:text-3xl font-bold text-purple-700 text-center mb-10">
+    <div className="grid">
+      <h2 className="text-[24px] md:text-3xl font-bold text-purple-700 text-center mb-10 z-10">
           Contato
         </h2>
       <div
         id={id}
-        className="flex flex-col md:flex-row justify-self-center bg-gray-900/40 border border-gray-800 lg:w-179.75 md:justify-between md:items-center md:rounded-3xl"
+        className="flex flex-col md:flex-row justify-self-center z-10 bg-gray-900 border border-gray-800 lg:w-179.75 md:justify-between md:items-center md:rounded-3xl"
       >
         <div className="flex flex-col md:w-110 p-6 justify-center items-center">
           <h2 className="text-purple-700 text-[17px] md:text-[20px] font-bold text-center mb-2 md:mb-4">
@@ -44,7 +44,7 @@ export function Contact({ id }: Props) {
             />
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center bg-gray-900 gap-6 md:w-fit md:h-fit p-4 md:p-6 md:rounded-3xl md:mr-6">
+        <div className="flex flex-col z-10 justify-center items-center bg-gray-950 gap-6 md:w-fit md:h-fit p-4 md:p-6 md:rounded-3xl md:mr-6">
           <p className="text-gray-400">Minhas redes</p>
 
           <div className="flex gap-2 md:gap-4">

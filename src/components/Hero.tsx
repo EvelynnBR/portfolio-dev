@@ -1,13 +1,13 @@
 import { HashLink } from "react-router-hash-link"
 import { IMAGES } from "../utils/image"
-import cv from "../files/curriculo-evelyn-bezerra-ramos.pdf"
+import cv from "../files/CV-Evelyn-Bezerra-Ramos.pdf"
 
 const { profile } = IMAGES
 
 export function Hero() {
   return (
     <div className="flex flex-col md:flex-row px-6 justify-self-center gap-4 md:12 md:gap-8">
-      <div className="flex flex-col mx-auto w-full md:w-105 md:mt-15">
+      <div className="flex flex-col z-10 mx-auto w-full md:w-105 md:mt-15">
         <span className="flex flex-col text-purple-500 text-center mb-4">
           Desenvolvedora Full-Stack
         </span>
@@ -39,7 +39,7 @@ export function Hero() {
       <img
         src={profile.profile}
         alt={profile.alt}
-        className="flex flex-col mx-auto mt-8 md:m-0 w-101.75 h-121.25 rounded-3xl"
+        className="flex flex-col z-10 mx-auto mt-8 md:m-0 w-101.75 h-121.25 rounded-3xl"
       />
     </div>
   )

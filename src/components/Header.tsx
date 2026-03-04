@@ -10,10 +10,10 @@ export function Header() {
   const [navMobile, setNavMobile] = useState(false)
   return (
     <header className="flex justify-between p-4 lg:p-8">
-      <h1 className="flex md:flex text-gray-100 font-bold text-lg">
+      <h1 className="flex md:flex text-gray-100 font-bold text-lg z-10">
         Evelyn Bezerra
       </h1>
-      <nav className="relative">
+      <nav className="relative z-10">
         <button
           type="button"
           onClick={() => setNavMobile(true)}
